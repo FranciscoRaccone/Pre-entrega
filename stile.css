@@ -1,0 +1,47 @@
+/* menu completo */
+header {
+    background-color: #2B2B2B;
+    text-align:start
+
+}
+/* imagen menu */
+header img {
+    width: fit-content;
+
+}
+/* menu de navegacion */
+nav {
+    color: #E6E6DD;
+    font-size: 25px;
+}
+/* titulo principal */
+h1 {
+    font-size: 50px; 
+    color: #2B2B2B;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+main {
+    background-color: #E6E6DD;
+    text-align: center;
+}
+
+section {
+    background-color: #E6E6DD;
+    text-align: left;
+}
+/* titulos de las paginas scundarias */
+ h2 {
+    font-size: 40px;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-align: center;
+ }
+ /* titulos secundarios */
+ h3 {
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-align: left;
+ }
