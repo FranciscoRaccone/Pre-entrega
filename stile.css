@@ -1,17 +1,20 @@
 /* menu completo */
 header {
-    background-color: #2B2B2B;
     text-align:start
-
 }
-/* imagen menu */
-header img {
-    width: fit-content;
-
+/* navbar color */
+.grey {
+    background-color: gray;
 }
+/* estilo letra menu */
+.dropdown-menu .dropdown-item {
+    color: black;
+    text-decoration: none;
+    font-style: normal;
+}
+
 /* menu de navegacion */
 nav {
-    color: #E6E6DD;
     font-size: 25px;
 }
 /* titulo principal */
