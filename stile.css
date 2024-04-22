@@ -1,17 +1,43 @@
 /* menu completo */
 header {
-    text-align:start
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Margen a la izquierda */
+    margin-right: 20px; /* Margen a la derecha */
+    margin-bottom: 50px;
+    box-shadow: 20px 15px 20px black;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav {
+    flex-grow: 1; /* El navbar ocupará todo el espacio restante */
+}
+
+
 /* navbar color */
 .grey {
-    background-color: gray;
+    background-color: #2B2B2B;
 }
+
+.white {
+    color: #E6E6DD !important;
+}
+
+#home-link {
+    color: #E6E6DD;
+}
+
 /* estilo letra menu */
-.dropdown-menu.grey .dropdown-item.grey {
-    color: black ;
-    text-decoration: none ;
-    font-style: normal ;
+.menu-hover {
+    color: #E6E6DD;
 }
+
  /* hover */
 .menu-hover:hover{
     background-color: gray;
@@ -73,3 +99,7 @@ section {
  footer {
     text-align: center;
  }
+
+ .navbar-toggler-icon {
+    color: #E6E6DD; /* Cambia el color del icono del botón (no funciona) */
+}
