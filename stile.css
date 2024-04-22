@@ -28,6 +28,13 @@ body p {
     justify-content: space-between;
     margin: 0px 10px;
 }
+
+body h3 {
+    /* Flex */
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+}
 /* menu de navegacion */
 nav {
     font-size: 25px;
@@ -47,7 +54,7 @@ main p {
 
 section {
     text-align: left;
-    margin: 0px 10px;
+    
 }
 /* titulos de las paginas scundarias */
  h2 {
