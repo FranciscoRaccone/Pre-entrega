@@ -1,0 +1,58 @@
+@charset "UTF-8";
+.grey {
+  background-color: #2B2B2B;
+}
+
+.menu-hover {
+  color: #E6E6DD;
+}
+
+.menu-hover:hover {
+  background-color: gray;
+}
+
+.navbar-toggler-icon {
+  color: #E6E6DD; /* Cambia el color del icono del botón (no funciona) */
+}
+
+#home-link {
+  color: #E6E6DD;
+}
+
+.nav-link {
+  color: #E6E6DD; /* Color de texto */
+  text-decoration: none; /* Quitar subrayado */
+  transition: color 0.3s ease; /* Transición suave para el color */
+}
+.nav-link:hover {
+  color: #eae77e; /* Cambiar color al pasar el mouse */
+}
+
+body {
+  background-color: #E6E6DD;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-left: 20px; /* Margen a la izquierda */
+  margin-right: 20px; /* Margen a la derecha */
+  margin-bottom: 50px;
+  box-shadow: 20px 15px 20px black;
+}
+header nav {
+  flex-grow: 1; /* El navbar ocupará todo el espacio restante */
+  font-size: 25px;
+}
+header nav ul {
+  list-style: none; /* Eliminar viñetas de las listas */
+  padding: 0;
+  margin: 0;
+}
+header nav ul li {
+  margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+}
+
+/*# sourceMappingURL=style.css.map */

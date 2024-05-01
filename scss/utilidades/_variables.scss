@@ -1,0 +1,32 @@
+.grey {
+    background-color: #2B2B2B;
+}
+
+//estilo letra menu
+.menu-hover {
+    color: #E6E6DD;
+}
+//hover
+.menu-hover:hover{
+    background-color: gray;
+}
+
+.navbar-toggler-icon {
+    color: #E6E6DD; /* Cambia el color del icono del botón (no funciona) */
+}
+
+#home-link {
+    color: #E6E6DD;
+}
+
+.nav-link {
+    color: #E6E6DD; /* Color de texto */
+    text-decoration: none; /* Quitar subrayado */
+    transition: color 0.3s ease; /* Transición suave para el color */
+    &:hover {
+        color: #eae77e; /* Cambiar color al pasar el mouse */
+    }
+}
+
+
+

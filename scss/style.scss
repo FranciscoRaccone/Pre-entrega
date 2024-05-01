@@ -1,0 +1,36 @@
+//estilos hatml
+@import "html/productos";
+//variables
+@import "utilidades/variables";
+//mixting
+@import "utilidades/mixin";
+
+body {
+    background-color: #E6E6DD;
+
+    
+}
+
+header {
+    @include flex;
+    margin-left: 20px; /* Margen a la izquierda */
+    margin-right: 20px; /* Margen a la derecha */
+    margin-bottom: 50px;
+    box-shadow: 20px 15px 20px black;
+    nav {
+        flex-grow: 1; /* El navbar ocupará todo el espacio restante */
+        font-size: 25px;
+        ul {
+            list-style: none; /* Eliminar viñetas de las listas */
+            padding: 0;
+            margin: 0;
+
+            li {
+                margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+            }
+        }
+        
+
+    }
+    
+}
