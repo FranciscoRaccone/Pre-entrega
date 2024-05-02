@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .grey {
-  background-color: #2B2B2B;
+  background-color: #050C07;
 }
 
 .menu-hover {
@@ -25,7 +25,7 @@
   transition: color 0.3s ease; /* Transición suave para el color */
 }
 .nav-link:hover {
-  color: #eae77e; /* Cambiar color al pasar el mouse */
+  color: #D01B2A; /* Cambiar color al pasar el mouse */
 }
 
 body {
