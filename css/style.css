@@ -44,7 +44,7 @@ header {
 }
 header nav {
   flex-grow: 1; /* El navbar ocupará todo el espacio restante */
-  font-size: 25px;
+  font-size: 35px;
 }
 header nav ul {
   list-style: none; /* Eliminar viñetas de las listas */
