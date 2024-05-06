@@ -41,7 +41,6 @@
   display: flex;
   align-items: flex-start; /* Alinea los elementos de la izquierda */
   justify-content: center; /* Centra horizontalmente */
-  max-width: 1200px; /* Ancho máximo del contenedor */
 }
 
 .textos {
@@ -49,6 +48,10 @@
   text-align: left; /* Alinea el texto a la izquierda */
   padding-right: 20px; /* Espacio a la derecha para separar del lado derecho */
   text-align: center;
+}
+
+main .textos h1 span {
+  display: block;
 }
 
 .imagen {
@@ -126,12 +129,6 @@ header nav ul li {
 /* Estilos de main */
 main {
   margin: 20px;
-}
-main h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
 }
 main h2 {
   display: flex;

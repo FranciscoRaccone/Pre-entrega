@@ -46,9 +46,7 @@ header {
     /* Estilos de main */
     main {
         margin: 20px ;
-        h1{
-            @include flex
-        }
+        
        h2{
         @include flex
        }
@@ -58,7 +56,7 @@ header {
         
     }
 
-    section {
+    section {       
         margin: 50px;
       
         .image-grid {
