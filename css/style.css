@@ -77,12 +77,6 @@ main .textos .boton {
   box-shadow: 5px 10px 20px black;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-color: #E6E6DD;
 }
@@ -116,6 +110,20 @@ header nav ul li {
 /* Estilos de main */
 main {
   margin: 20px 0px;
+}
+main h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+main h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+main p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,6 +136,7 @@ section img {
   grid-template-columns: repeat(8, 1fr);
   gap: 30px;
   margin: 30px;
+  padding: 30px;
   width: 100%;
   height: 100%;
   object-fit: cover;
