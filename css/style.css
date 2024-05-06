@@ -77,6 +77,22 @@ main .textos .boton {
   box-shadow: 5px 10px 20px black;
 }
 
+/* mq tablet */
+@media screen and (min-width: 600px) {
+  section img {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50%);
+  }
+  body {
+    background-color: #D01B2A;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #E6E6DD;
 }
@@ -109,7 +125,7 @@ header nav ul li {
 
 /* Estilos de main */
 main {
-  margin: 20px 0px;
+  margin: 20px;
 }
 main h1 {
   display: flex;
@@ -130,28 +146,46 @@ main p {
   gap: 15px;
 }
 
-section img {
+section {
+  margin: 50px;
+}
+section .image-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 30px;
-  margin: 30px;
-  padding: 30px;
+  grid-template-rows: repeat(8, 1fr);
+}
+section .image-grid div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-section h5 {
+section .image-grid div h5 {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
+  margin-top: 30px;
 }
-section p {
+section .image-grid div p {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 600px) {
+  section .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section .image-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 50px;
+  }
 }
 
 footer {

@@ -5,6 +5,11 @@
 //mixting
 @import "utilidades/mixin";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background-color: #E6E6DD;
@@ -40,7 +45,7 @@ header {
 
     /* Estilos de main */
     main {
-        margin: 20px 0px;
+        margin: 20px ;
         h1{
             @include flex
         }
@@ -53,25 +58,45 @@ header {
         
     }
 
-    section{
-        img{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-columns: repeat(8, 1fr);
-        gap: 30px;
-        margin: 30px; 
-        padding: 30px;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        }   
-        h5{
-            @include flex
+    section {
+        margin: 50px;
+      
+        .image-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(8, 1fr); // Cambiar a 1fr para que las filas tengan la misma altura
+      
+          div {
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+      
+            h5 {
+              @include flex;
+              margin-top: 30px;
+            }
+      
+            p {
+              @include flex;
+              margin-bottom: 40px;
+            }
+          }
+      
+          @media screen and (min-width: 600px) {
+            grid-template-columns: repeat(2, 1fr); // Dos columnas en pantallas de al menos 600px
+            grid-template-rows: repeat(4, 1fr); // Cuatro filas en pantallas de al menos 600px
+            gap: 50px;
+          }
+          @media screen and (min-width: 1024px){
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4,1fr);
+            gap: 50px;
+          }
         }
-        p{
-            @include flex
-        }
-    }
+      }
+    
 
 
     footer {

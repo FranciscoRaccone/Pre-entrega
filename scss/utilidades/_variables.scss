@@ -77,3 +77,15 @@
     box-shadow: 5px 10px 20px black;
 }
 
+/* mq tablet */
+
+@media screen and (min-width: 600px) {
+    section img{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50%);
+    }
+    body{
+        background-color: #D01B2A;
+    }
+
+}
