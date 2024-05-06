@@ -28,19 +28,13 @@
                       Menu
                     </a>
                     <ul class="dropdown-menu grey">
-                      <li><a class="dropdown-item menu-hover" href="../pages/pagina1.html">
-                        Pagina 1
-                    </a></li>
-                      <li><a class="dropdown-item menu-hover" href="../pages/pagina2.html">
-                        Pagina 2
-                     </a></li>
-                      <li><a class="dropdown-item menu-hover" href="../pages/pagina3.html">
-                        Pagina 3 
-                     </a></li>
-                     <li><hr class="dropdown-divider"></li>
-                     <li><a class="dropdown-item menu-hover" href="../pages/pagina4.html">
-                      Pagina 4 
-                   </a></li>
+                      <li><a class="dropdown-item menu-hover" href="../pages/pagina1.html">Sobre nosotros </a></li>
+                      <li><hr class="dropdown-divider grey"></li>
+                      <li><a class="dropdown-item menu-hover" href="../pages/pagina2.html">Carta</a></li>
+                      <li><hr class="dropdown-divider grey"></li>
+                      <li><a class="dropdown-item menu-hover" href="../pages/pagina3.html">Galeria</a></li>
+                      <li><hr class="dropdown-divider grey"></li>
+                      <li><a class="dropdown-item menu-hover" href="../pages/pagina4.html">Contacto</a></li>
                     </ul>
                   </li>
                 </ul>              
@@ -50,20 +44,61 @@
         </header>
     <main>
         <h2>
-            Titulo Pagina4
+            Contactanos
         </h2>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi debitis, obcaecati quidem odit eius nihil temporibus incidunt, similique veniam nostrum, alias aspernatur earum dolorum facere neque voluptatem amet. Deserunt, est?
         </p>
     </main>
-    <section>
-        <h3>
-            Titulo secundario
-        </h3>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi quis saepe possimus quisquam excepturi minima vero qui, laboriosam, libero, soluta quia. Numquam, perspiciatis ipsa maxime quia aliquid eum non totam!
-        </p>
-    </section>
+    <section class="Reserva"> <!-- esto lo copie de una pagina ,solo le cambie los textos -->
+      <div class="container" data-aos="fade-up">
+
+        <div>
+
+          <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
+
+          <div>
+            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+              <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Cargando</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Tu solicitud fue enviada, Gracias!</div>
+              </div>
+              <div class="text-center"><button type="submit">Enviar</button></div>
+            </form>
+          </div>
+
+        </div>
     <footer>
       <h4>
           Pie de pagina
