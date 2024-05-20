@@ -18,7 +18,7 @@
 }
 
 .menu-burger {
-  color: #E6E6DD !important; /* Cambia el color del icono del botón (no funciona) */
+  background-color: #E6E6DD; /* Cambia el color del icono del botón  */
 }
 
 .nav-link.active:hover {
