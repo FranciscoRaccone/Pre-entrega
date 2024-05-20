@@ -20,7 +20,7 @@
   background-color: #E6E6DD; /* Cambia el color del icono del botón (no funciona) */
 }
 
-.nav-link.active:hover {
+.nav-link:hover {
   color: #D01B2A !important; /* Color al pasar el mouse */
 }
 
@@ -31,9 +31,6 @@
 .nav-link {
   color: #E6E6DD; /* Color de texto */
   transition: color 0.3s ease; /* Transición suave para el color */
-}
-.nav-link:hover {
-  color: #D01B2A; /* Cambiar color al pasar el mouse */
 }
 
 .container {
@@ -67,6 +64,16 @@ main .textos h1 span {
   display: flex;
   justify-content: center; /* Alinea los botones horizontalmente */
   gap: 10px; /* Espacio entre los botones */
+}
+
+.estilo-boton {
+  text-decoration: none;
+  color: #E6E6DD;
+}
+
+.estilo-boton:hover {
+  color: #D01B2A;
+  font-size: 25px;
 }
 
 main .textos .boton {
@@ -133,27 +140,27 @@ main p {
   gap: 15px;
 }
 
-section {
+.menu-pizzas {
   margin: 50px;
 }
-section .image-grid {
+.menu-pizzas .image-grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(8, 1fr);
 }
-section .image-grid div img {
+.menu-pizzas .image-grid div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-section .image-grid div h5 {
+.menu-pizzas .image-grid div h5 {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
   margin-top: 30px;
 }
-section .image-grid div p {
+.menu-pizzas .image-grid div p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,17 +168,39 @@ section .image-grid div p {
   margin-bottom: 40px;
 }
 @media screen and (min-width: 600px) {
-  section .image-grid {
+  .menu-pizzas .image-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 50px;
   }
 }
 @media screen and (min-width: 1024px) {
-  section .image-grid {
+  .menu-pizzas .image-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 50px;
+  }
+}
+
+.section-nosotros {
+  display: flex;
+  justify-content: center;
+  margin: 50px 200px;
+  gap: 50px;
+}
+.section-nosotros .texto-nosotros {
+  font-size: 20px;
+  margin: 0px 40px;
+}
+@media screen and (max-width: 1360px) {
+  .section-nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-direction: column;
+    gap: 50px;
+    margin: 30px 20px 70px;
   }
 }
 

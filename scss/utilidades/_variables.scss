@@ -7,6 +7,7 @@
     background-color: rgb(82, 82, 82);
 }
 
+
 //estilo letra menu
 .menu-selected {
     color: #D01B2A !important;
@@ -21,7 +22,7 @@
     background-color: #E6E6DD ; /* Cambia el color del icono del botón (no funciona) */
 }
 
-.nav-link.active:hover {
+.nav-link:hover {
     color: #D01B2A !important; /* Color al pasar el mouse */
 }
 
@@ -32,9 +33,6 @@
 .nav-link {
     color: #E6E6DD; /* Color de texto */
     transition: color 0.3s ease; /* Transición suave para el color */
-    &:hover {
-        color: #D01B2A; /* Cambiar color al pasar el mouse */
-    }
 }
 //Estilos main
 .container {
@@ -71,6 +69,17 @@ main .textos h1 span{
     justify-content: center; /* Alinea los botones horizontalmente */
     gap: 10px; /* Espacio entre los botones */
 }
+
+.estilo-boton{
+   text-decoration: none;
+   color: #E6E6DD;
+}
+
+.estilo-boton:hover{
+    color: #D01B2A;
+    font-size: 25px;
+}
+
  main .textos .boton{
     background-color: #2B2B2B;
     color: #E6E6DD;

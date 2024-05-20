@@ -57,7 +57,7 @@ header {
         
     }
 
-    section {       
+    .menu-pizzas {       
         margin: 50px;
       
         .image-grid {
@@ -93,6 +93,25 @@ header {
             grid-template-rows: repeat(4,1fr);
             gap: 50px;
           }
+        }
+      }
+
+      .section-nosotros{
+        display: flex;
+        justify-content: center;
+        margin: 50px 200px;
+        gap: 50px;
+        
+        .texto-nosotros{
+          font-size: 20px;
+          margin: 0px 40px
+        }
+        @media screen and (max-width: 1360px){
+          @include flex;
+          flex-direction: column;
+          gap: 50px;
+          margin: 30px 20px 70px;
+          
         }
       }
     
