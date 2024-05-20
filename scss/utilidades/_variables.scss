@@ -8,10 +8,9 @@
 }
 
 //estilo letra menu
-.menu-hover {
-    color: #D01B2A;
-    font-size: 20px;
-    background-color: rgb(82, 82, 82);
+.menu-selected {
+    color: #D01B2A !important;
+    font-size: 50px;
 }
 //hover cuando paso el mouse por arriba
 .menu-hover:hover{
@@ -26,7 +25,7 @@
     color: #D01B2A !important; /* Color al pasar el mouse */
 }
 
-#home-link {
+#menu-link {
     color: #E6E6DD;
 }
 
