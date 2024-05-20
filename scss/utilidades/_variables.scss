@@ -18,7 +18,7 @@
 }
 
 .menu-burger {
-    color: #E6E6DD !important; /* Cambia el color del icono del botón (no funciona) */
+    background-color: #E6E6DD ; /* Cambia el color del icono del botón (no funciona) */
 }
 
 .nav-link.active:hover {
@@ -81,15 +81,4 @@ main .textos h1 span{
     box-shadow: 5px 10px 20px black;
 }
 
-/* mq tablet */
 
-@media screen and (min-width: 600px) {
-    section img{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 50%);
-    }
-    body{
-        background-color: #D01B2A;
-    }
-
-}
