@@ -13,6 +13,9 @@
 
 body {
     background-color: #E6E6DD;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -46,13 +49,16 @@ header {
 
     /* Estilos de main */
     main {
+          
         margin: 20px ;
-        
+        padding-bottom: 25px;
        h2{
-        @include flex
+        @include flex;
+        
        }
        p{
-        @include flex
+        @include flex;
+        
        }
         
     }
@@ -64,6 +70,7 @@ header {
           display: grid;
           grid-template-columns: 1fr;
           grid-template-rows: repeat(8, 1fr); // Cambiar a 1fr para que las filas tengan la misma altura
+          
       
           div {
             img {
@@ -90,7 +97,7 @@ header {
           }
           @media screen and (min-width: 1024px){
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
             gap: 50px;
           }
         }
@@ -114,14 +121,27 @@ header {
           
         }
       }
+
+      .carrusel{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        img{
+          max-height: 700px;
+        }
+    }
+
+
     
 
 
     footer {
-        position:fixed;
+      
+        @include flex;
         text-align: center;
         bottom: 0;
         left: 0;
         width: 100%;
         margin-bottom: 20px;
+        margin-top: auto;
     }
