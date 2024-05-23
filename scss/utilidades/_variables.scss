@@ -107,8 +107,23 @@ span{
 .carrusel{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 50px;
     position: relative;
+    
+    margin: 0px 20x;
+    margin-right: 25%;
+    margin-left: 25%;
+    @media screen and (max-width: 700px){
+      
+        margin: 0px 20px 30px;
+    }
+    @media screen and (max-width: 1340px){
+        
+        margin: 0px 20px 30px;
+    }
+
+    
 
   }
   
@@ -117,6 +132,16 @@ span{
     height: 500px; /* Altura fija para todas las imágenes */
     object-fit: cover;
   }
+
+  /* Suavizar la transición */
+.carrusel .carousel-fade .carousel-item {
+    opacity: 0;
+    transition-duration: 1s; /* Ajusta el tiempo de transición */
+}
+
+.carrusel .carousel-fade .carousel-item.active {
+    opacity: 1;
+}
 
   .carousel-caption {
     position: absolute;
@@ -156,5 +181,10 @@ h1, h2{
 /* Aplica Inter a los botones y elementos específicos */
 button, .btn, .navbar, .footer {
     font-family: 'Inter', sans-serif;
+}
+
+/* Estilo para todas las imágenes del documento */
+img {
+    border-radius: 25px; /* Ajusta el valor según el redondeo deseado */
 }
 
