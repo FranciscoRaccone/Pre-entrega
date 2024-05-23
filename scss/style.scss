@@ -163,9 +163,24 @@ header {
       
         @include flex;
         text-align: center;
+        color: #FAFAFA;
         bottom: 0;
         left: 0;
         width: 100%;
-        margin-bottom: 20px;
-        margin-top: auto;
+        margin-bottom: 0px;
+        margin-top: 40px;
+        background-color: #232323; /* Color de fondo del footer */
+        padding: 20px; /* Espaciado interno del footer */
+        
+        .redes li{
+          display: inline-block; /* Los elementos de la lista se muestran en línea */
+          margin: 0 20px; /* Espacio entre los íconos */
+
+        }
+        
+
+
+
+        
+    
     }
