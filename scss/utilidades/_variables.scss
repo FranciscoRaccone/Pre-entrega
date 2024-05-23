@@ -34,13 +34,7 @@
     color: #E6E6DD; /* Color de texto */
     transition: color 0.3s ease; /* Transición suave para el color */
 }
-//Estilos main
-.container {
-    display: flex;
-    align-items: flex-start; /* Alinea los elementos de la izquierda */
-    justify-content: center; /* Centra horizontalmente */
-    
-}
+
 
 .textos {
     flex: 1; /* Ocupa todo el espacio disponible */
@@ -50,7 +44,27 @@
 }
 main .textos h1 span{
     display: block;
+}
 
+main p{
+    font-size: 20px;
+    text-align: center;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+h2{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+span{
+    color: #D01B2A;
 }
 
 .imagen {
@@ -129,4 +143,18 @@ main .textos h1 span{
     margin: 5px 0 0;
   }
 
+
+
+
+/* Aplica Amatic SC a los títulos */
+
+h1, h2{
+    font-family: 'Amatic SC', cursive;
+    text-transform: uppercase;
+}
+
+/* Aplica Inter a los botones y elementos específicos */
+button, .btn, .navbar, .footer {
+    font-family: 'Inter', sans-serif;
+}
 

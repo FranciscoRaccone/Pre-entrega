@@ -63,10 +63,26 @@ header {
        }
         
     }
+    
+.container {
+  display: flex;
+  align-items: flex-start; /* Alinea los elementos de la izquierda */
+  justify-content: center; /* Centra horizontalmente */
+  @media screen and (max-width: 1260px){
+      
+      flex-direction: column;
+      gap: 50px;
+      margin: 30px 20px 70px;
+      justify-content: center;
+      align-items: center;
+      
+    }
+  
+}
 
     .menu-pizzas {       
         margin: 50px;
-      
+       
         .image-grid {
           display: grid;
           grid-template-columns: 1fr;
@@ -121,6 +137,13 @@ header {
           margin: 30px 20px 70px;
           
         }
+      }
+
+      .contacto{
+        display: flex;
+        align-items: flex-start; /* Alinea los elementos de la izquierda */
+        justify-content: center; /* Centra horizontalmente */
+        margin: 20px;
       }
 
     
