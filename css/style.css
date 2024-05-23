@@ -11,6 +11,10 @@
   color: #FAFAFA;
 }
 
+.estilo-boton:hover svg {
+  fill: #D01B2A; /* Cambia el color del ícono al pasar el mouse */
+}
+
 .menu-selected {
   color: #D01B2A !important;
   font-size: 50px;
