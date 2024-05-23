@@ -54,6 +54,7 @@ header {
         padding-bottom: 25px;
        h2{
         @include flex;
+        margin-bottom: 30px;
         
        }
        p{
@@ -122,15 +123,7 @@ header {
         }
       }
 
-      .carrusel{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 50px;
-        img{
-          max-height: 700px;
-        }
-    }
-
+    
 
     
 
